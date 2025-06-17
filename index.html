@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Sagar Havalannache</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .mono {
+      font-family: 'Fira Code', monospace;
+    }
+    ::selection {
+      background: #64ffda;
+      color: #0a192f;
+    }
+  </style>
+</head>
+<body class="bg-[#0a192f] text-[#ccd6f6]">
+  <div class="flex flex-col lg:flex-row min-h-screen">
+    <!-- Fixed Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:items-end w-1/5 p-6 fixed top-0 left-0 h-full bg-[#0a192f]">
+      <nav class="space-y-6 text-right">
+        <a href="#about" class="block hover:text-[#64ffda] mono">01. About</a>
+        <a href="#education" class="block hover:text-[#64ffda] mono">02. Education</a>
+        <a href="#experience" class="block hover:text-[#64ffda] mono">03. Experience</a>
+        <a href="#projects" class="block hover:text-[#64ffda] mono">04. Projects</a>
+        <a href="#contact" class="block hover:text-[#64ffda] mono">05. Contact</a>
+        <a href="./Yash_Havalannache_Professional_Resume.pdf" download="Yash_Resume.pdf"download class="block border border-[#64ffda] px-4 py-1 rounded text-center text-[#64ffda] hover:bg-[#64ffda] hover:text-[#0a192f] transition mono">Download Resume</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="w-full lg:w-4/5 lg:ml-[20%] px-8 sm:px-16 py-10 space-y-20">
+      <!-- Hero -->
+      <section class="space-y-4" id="hero">
+        <p class="text-[#64ffda] mono">Hi, my name is</p>
+        <h1 class="text-5xl font-bold text-white leading-tight">Yash Sagar Havalannache.</h1>
+        <h2 class="text-3xl text-[#8892b0] leading-snug">I build powerful digital products that blend design, logic, and purpose.</h2>
+        <p class="text-[#8892b0] max-w-xl mt-4">
+          I’m a final-year B.Tech Computer Science student passionate about full-stack development, AI-driven solutions, and clean user experiences. From leading cricket teams to creating impactful tech products, I bring energy, vision, and clarity to every challenge.
+        </p>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <h2 class="mono text-[#64ffda] mb-4">01. About Me</h2>
+        <p class="text-[#8892b0] leading-relaxed">
+          I'm a developer, leader, and cricket enthusiast driven by purpose and creativity. I’ve captained my university cricket team, achieved University Blue honors, and built full-stack projects like <strong>Cricsights</strong> (cricket analysis platform), <strong>SmartDoc Automator</strong> (multi-format AI document tool), and <strong>MindMirror</strong> (AI-powered wellness assistant).
+        </p>
+        <p class="text-[#8892b0] mt-4">
+          I thrive in collaborative and solo settings, love building intuitive tools that solve real-world problems, and believe in blending strategy (from cricket) with structure (in code).
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <h2 class="mono text-[#64ffda] mb-4">02. Education</h2>
+        <ul class="text-[#8892b0] space-y-4">
+          <li><strong class="text-white">B.Tech – Computer Science & Engineering</strong><br>KLS Gogte Institute of Technology, Belgaum (2022–2026) | CGPA: 8.4</li>
+          <li><strong class="text-white">PUC – Science</strong><br>Govindram Seksaria PU College, Belgaum (2022) | 72.84%</li>
+          <li><strong class="text-white">SSLC (Class 10)</strong><br>St. Mary’s High School, Camp, Belgaum (2020) | 76.74%</li>
+        </ul>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2 class="mono text-[#64ffda] mb-4">03. Experience & Leadership</h2>
+        <ul class="list-disc ml-6 text-[#8892b0] space-y-2">
+          <li>University Blue – Cricket (VTU), 2025</li>
+          <li>Captain – GIT Cricket Team (2023–25)</li>
+          <li>National-Level Cricketer (Karnataka)</li>
+          <li>Team Lead – All solo and group projects</li>
+          <li>Organizer – CSPL, Sports Fests, Tech Events</li>
+          <li>Volunteer – College outreach & social initiatives</li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2 class="mono text-[#64ffda] mb-4">04. Projects</h2>
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-semibold text-white">SmartDoc Automator</h3>
+            <p class="text-[#8892b0]">AI-powered multi-format file processor with translation, OCR, and chatbot preview capabilities.</p>
+            <p class="mono text-sm text-[#64ffda]">Python, Flask, Tesseract, SQLite</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-white">MindMirror</h3>
+            <p class="text-[#8892b0]">Mental wellness app combining journaling, mood graphs, affirmations, and dilemma analyzers.</p>
+            <p class="mono text-sm text-[#64ffda]">Python, Flask, NLP, HTML/CSS</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-white">Cricsights</h3>
+            <p class="text-[#8892b0]">Cricket analytics platform showcasing player matchups, performance heatmaps, and strategy dashboards.</p>
+            <p class="mono text-sm text-[#64ffda]">Python, Flask, Matplotlib, SQLite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="mono text-[#64ffda] mb-4">05. Contact</h2>
+        <p class="text-[#8892b0]">Email: <a href="mailto:yashhavalannache@gmail.com" class="text-[#64ffda]">yashhavalannache@gmail.com</a></p>
+        <p class="text-[#8892b0]">Phone: <span class="text-[#64ffda]">+91 8951192623</span></p>
+        <p class="text-[#8892b0]">GitHub: <a href="https://github.com/yashhavalannache" class="text-[#64ffda]">github.com/yashhavalannache</a></p>
+        <p class="text-[#8892b0]">LinkedIn: <a href="https://linkedin.com/in/yashhavalannache" class="text-[#64ffda]">linkedin.com/in/yashhavalannache</a></p>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center pt-20 pb-8 text-sm text-[#8892b0]">
+        &copy; 2025 Yash Sagar Havalannache • Built with TailwindCSS & ❤️
+      </footer>
+    </main>
+  </div>
+
+  <!-- ScrollReveal -->
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '40px',
+      delay: 200,
+      reset: false
+    });
+  </script>
+</body>
+</html>
