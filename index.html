@@ -3,143 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Sagar Havalannache</title>
+  <title>Yash Havalannache</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
     }
-    .mono {
-      font-family: 'Fira Code', monospace;
-    }
     ::selection {
-      background: #ff6f61;
-      color: #ffffff;
+      background: #facc15;
+      color: #1e293b;
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-[#f9f9f9] to-[#e0f7fa] text-[#1a1a1a]">
+<body class="bg-gradient-to-tr from-[#0f172a] to-[#1e293b] text-[#e0f2fe]">
+
+  <!-- NavBar -->
+  <header class="bg-[#1e293b] shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-bold text-[#38bdf8]">Yash Sagar Havalannache</h1>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#about" class="hover:text-[#38bdf8] font-mono">01. About</a>
+        <a href="#education" class="hover:text-[#38bdf8] font-mono">02. Education</a>
+        <a href="#experience" class="hover:text-[#38bdf8] font-mono">03. Experience</a>
+        <a href="#projects" class="hover:text-[#38bdf8] font-mono">04. Projects</a>
+        <a href="#contact" class="hover:text-[#38bdf8] font-mono">05. Contact</a>
+        <a href="./Resume_Yash_2025.pdf" download class="border border-[#38bdf8] px-4 py-1 rounded hover:bg-[#38bdf8] hover:text-[#0f172a] font-mono">Download Resume</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Mobile Nav -->
-  <div class="lg:hidden bg-[#e3f2fd] text-[#0a192f] py-4 px-6 shadow-md flex justify-between items-center sticky top-0 z-50">
-    <div class="font-bold text-lg">Yash</div>
-    <div class="flex gap-4 text-sm">
-      <a href="#about" class="hover:text-[#0077b6]">About</a>
-      <a href="#education" class="hover:text-[#0077b6]">Education</a>
-      <a href="#experience" class="hover:text-[#0077b6]">Experience</a>
-      <a href="#projects" class="hover:text-[#0077b6]">Projects</a>
-      <a href="#contact" class="hover:text-[#0077b6]">Contact</a>
-    </div>
+  <div class="md:hidden flex flex-wrap justify-center gap-3 bg-[#1e293b] p-4 shadow sticky top-14 z-40">
+    <a href="#about" class="text-sm text-[#bae6fd] hover:underline">About</a>
+    <a href="#education" class="text-sm text-[#bae6fd] hover:underline">Education</a>
+    <a href="#experience" class="text-sm text-[#bae6fd] hover:underline">Experience</a>
+    <a href="#projects" class="text-sm text-[#bae6fd] hover:underline">Projects</a>
+    <a href="#contact" class="text-sm text-[#bae6fd] hover:underline">Contact</a>
+    <a href="./Resume_Yash_2025.pdf" download class="text-sm bg-[#38bdf8] text-[#0f172a] px-2 py-1 rounded">Download Resume</a>
   </div>
 
-  <!-- Resume Download (Mobile Only) -->
-  <div class="lg:hidden px-6 pt-4">
-    <a href="./Resume_Yash_2025.pdf" download="Yash_Resume.pdf"
-      class="block border border-[#0077b6] px-4 py-2 rounded text-center text-[#0077b6] hover:bg-[#0077b6] hover:text-white transition font-medium">
-      📄 Download Resume
-    </a>
-  </div>
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
 
-  <div class="flex flex-col lg:flex-row min-h-screen">
-    <!-- Fixed Sidebar -->
-    <aside class="hidden lg:flex lg:flex-col lg:items-end w-1/5 p-6 fixed top-0 left-0 h-full bg-white shadow-lg">
-      <nav class="space-y-6 text-right">
-        <a href="#about" class="block hover:text-[#ff6f61] mono text-[#0077b6]">01. About</a>
-        <a href="#education" class="block hover:text-[#ff6f61] mono text-[#0077b6]">02. Education</a>
-        <a href="#experience" class="block hover:text-[#ff6f61] mono text-[#0077b6]">03. Experience</a>
-        <a href="#projects" class="block hover:text-[#ff6f61] mono text-[#0077b6]">04. Projects</a>
-        <a href="#contact" class="block hover:text-[#ff6f61] mono text-[#0077b6]">05. Contact</a>
-        <a href="./Resume_Yash_2025.pdf" download="Yash_Resume.pdf" class="block border border-[#0077b6] px-4 py-1 rounded text-center text-[#0077b6] hover:bg-[#0077b6] hover:text-white transition mono">
-        Download Resume
-        </a>
-      </nav>
-    </aside>
+    <!-- Hero -->
+    <section id="hero" class="space-y-4 text-center">
+      <p class="text-[#38bdf8] font-mono">Hi, my name is</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Yash Sagar Havalannache</h1>
+      <h2 class="text-2xl text-[#7dd3fc]">I build powerful digital products that blend design, logic, and purpose.</h2>
+      <p class="text-[#bae6fd] max-w-2xl mx-auto mt-4">
+        I'm a B.Tech Computer Science student with a passion for full-stack development, AI, and user-centered experiences. I bring clarity, energy, and strategic leadership from both tech and the cricket field.
+      </p>
+    </section>
 
-    <!-- Main Content -->
-    <main class="w-full lg:w-4/5 lg:ml-[20%] px-8 sm:px-16 py-10 space-y-20">
-      <!-- Hero -->
-      <section class="space-y-4" id="hero">
-        <p class="text-[#0077b6] mono">Hi, my name is</p>
-        <h1 class="text-5xl font-bold leading-tight text-[#1a1a1a]">Yash Sagar Havalannache.</h1>
-        <h2 class="text-3xl text-[#4f4f4f] leading-snug">I build powerful digital products that blend design, logic, and purpose.</h2>
-        <p class="text-[#4f4f4f] max-w-xl mt-4">
-          I’m a B.Tech Computer Science student passionate about full-stack development, AI-driven solutions, and clean user experiences. From leading cricket teams to creating impactful tech products, I bring energy, vision, and clarity to every challenge.
-        </p>
-      </section>
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-[#38bdf8] font-extrabold text-2xl md:text-3xl tracking-wider uppercase mb-6">
+        01. About Me
+        <span class="block w-14 h-1 bg-[#38bdf8] mt-2"></span>
+      </h2>
+      <p class="leading-relaxed">
+        I’m a Computer Science undergrad passionate about building intelligent digital experiences that feel natural, thoughtful, and sharp. Whether it's crafting full-stack web apps, training AI models, or optimizing UI/UX — I thrive on solving real-world problems with a creative flair.
+      </p>
+      <p class="mt-4">
+        Outside the IDE, I'm a University Blue cricketer and team captain — leading from the front, both on the pitch and in code. My experience blends leadership, discipline, strategy, and the ability to hustle under pressure — whether it's a final over or a final year project.
+      </p>
+      <p class="mt-4">
+        From building <strong>Cricsights</strong> (a cricket analytics tool) to <strong>MindMirror</strong> (an AI mental wellness app), I bring a mix of vision, execution, and empathy to every line of code I write.
+      </p>
+    </section>
 
-      <!-- About -->
-      <section id="about">
-        <h2 class="mono text-[#0077b6] mb-4">01. About Me</h2>
-        <p class="text-[#4f4f4f] leading-relaxed">
-          I'm a developer, leader, and cricket enthusiast driven by purpose and creativity. I’ve captained my university cricket team, achieved University Blue honors, and built full-stack projects like <strong>Cricsights</strong> (cricket analysis platform), <strong>SmartDoc Automator</strong> (multi-format AI document tool), and <strong>MindMirror</strong> (AI-powered wellness assistant).
-        </p>
-        <p class="text-[#4f4f4f] mt-4">
-          I thrive in collaborative and solo settings, love building intuitive tools that solve real-world problems, and believe in blending strategy (from cricket) with structure (in code).
-        </p>
-      </section>
+    <!-- Education -->
+    <section id="education">
+      <h2 class="text-[#38bdf8] font-extrabold text-2xl md:text-3xl tracking-wider uppercase mb-6">
+        02. Education
+        <span class="block w-14 h-1 bg-[#38bdf8] mt-2"></span>
+      </h2>
+      <ul class="space-y-3 text-slate-300">
+        <li><strong>B.Tech – CSE</strong> @ KLS Gogte Institute of Technology Belgaum (2022–2026) | CGPA: 8.4</li>
+        <li><strong>PUC – Science</strong> @ Govindram Seksaria ScienceS PU College (2022) | 72.84%</li>
+        <li><strong>SSLC</strong> @ St. Mary’s High School, Camp, Belgaum (2020) | 76.74%</li>
+      </ul>
+    </section>
 
-      <!-- Education -->
-      <section id="education">
-        <h2 class="mono text-[#0077b6] mb-4">02. Education</h2>
-        <ul class="text-[#4f4f4f] space-y-4">
-          <li><strong class="text-[#1a1a1a]">B.Tech – Computer Science & Engineering</strong><br>KLS Gogte Institute of Technology, Belgaum (2022–2026) | CGPA: 8.4</li>
-          <li><strong class="text-[#1a1a1a]">PUC – Science</strong><br>Govindram Seksaria PU College, Belgaum (2022) | 72.84%</li>
-          <li><strong class="text-[#1a1a1a]">SSLC (Class 10)</strong><br>St. Mary’s High School, Camp, Belgaum (2020) | 76.74%</li>
-        </ul>
-      </section>
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="text-[#38bdf8] font-extrabold text-2xl md:text-3xl tracking-wider uppercase mb-6">
+        03. Experience & Leadership
+        <span class="block w-14 h-1 bg-[#38bdf8] mt-2"></span>
+      </h2>
+      <ul class="list-disc ml-6 space-y-2 text-slate-300">
+        <li>University Blue – Cricket (VTU), 2025</li>
+        <li>Captain – GIT Cricket Team</li>
+        <li>National-Level Cricketer</li>
+        <li>Lead – All solo & group tech projects</li>
+        <li>Organizer – CSPL, Tech/Sports Fests</li>
+      </ul>
+    </section>
 
-      <!-- Experience -->
-      <section id="experience">
-        <h2 class="mono text-[#0077b6] mb-4">03. Experience & Leadership</h2>
-        <ul class="list-disc ml-6 text-[#4f4f4f] space-y-2">
-          <li>University Blue – Cricket (VTU), 2025</li>
-          <li>Captain – GIT Cricket Team (2023–25)</li>
-          <li>National-Level Cricketer (Karnataka)</li>
-          <li>Team Lead – All solo and group projects</li>
-          <li>Organizer – CSPL, Sports Fests, Tech Events</li>
-          <li>Volunteer – College outreach & social initiatives</li>
-        </ul>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-        <h2 class="mono text-[#0077b6] mb-4">04. Projects</h2>
-        <div class="space-y-8">
-          <div>
-            <h3 class="text-xl font-semibold text-[#1a1a1a]">SmartDoc Automator</h3>
-            <p class="text-[#4f4f4f]">AI-powered multi-format file processor with translation, OCR, and chatbot preview capabilities.</p>
-            <p class="mono text-sm text-[#0077b6]">Python, Flask, Tesseract, SQLite</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-semibold text-[#1a1a1a]">MindMirror</h3>
-            <p class="text-[#4f4f4f]">Mental wellness app combining journaling, mood graphs, affirmations, and dilemma analyzers.</p>
-            <p class="mono text-sm text-[#0077b6]">Python, Flask, NLP, HTML/CSS</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-semibold text-[#1a1a1a]">Cricsights</h3>
-            <p class="text-[#4f4f4f]">Cricket analytics platform showcasing player matchups, performance heatmaps, and strategy dashboards.</p>
-            <p class="mono text-sm text-[#0077b6]">Python, Flask, Matplotlib, SQLite</p>
-          </div>
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="text-[#38bdf8] font-extrabold text-2xl md:text-3xl tracking-wider uppercase mb-6">
+        04. Projects
+        <span class="block w-14 h-1 bg-[#38bdf8] mt-2"></span>
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-4 bg-white text-[#0f172a] rounded shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg text-pink-600">SmartDoc Automator</h3>
+          <p>AI-powered multi-format file processor with translation, OCR, and chatbot preview capabilities.</p>
+          <p class="font-mono text-sm mt-2">Python, Flask, Tesseract, SQLite</p>
         </div>
-      </section>
+        <div class="p-4 bg-white text-[#0f172a] rounded shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg text-pink-600">MindMirror</h3>
+          <p>Mental wellness app with journaling, mood graphs, affirmations, and dilemma analyzers.</p>
+          <p class="font-mono text-sm mt-2">Python, Flask, NLP</p>
+        </div>
+        <div class="p-4 bg-white text-[#0f172a] rounded shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg text-pink-600">Cricsights</h3>
+          <p>Cricket analytics platform showing matchups, heatmaps, and strategy boards.</p>
+          <p class="font-mono text-sm mt-2">Python, Flask, Matplotlib, SQLite</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Contact -->
-      <section id="contact">
-        <h2 class="mono text-[#0077b6] mb-4">05. Contact</h2>
-        <p class="text-[#4f4f4f]">Email: <a href="mailto:yashhavalannache@gmail.com" class="text-[#ff6f61]">yashhavalannache@gmail.com</a></p>
-        <p class="text-[#4f4f4f]">Phone: <span class="text-[#ff6f61]">+91 8951192623</span></p>
-        <p class="text-[#4f4f4f]">GitHub: <a href="https://github.com/yashhavalannache" class="text-[#ff6f61]">github.com/yashhavalannache</a></p>
-        <p class="text-[#4f4f4f]">LinkedIn: <a href="https://linkedin.com/in/yashhavalannache" class="text-[#ff6f61]">linkedin.com/in/yashhavalannache</a></p>
-      </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-[#38bdf8] font-extrabold text-2xl md:text-3xl tracking-wider uppercase mb-6">
+        05. Contact
+        <span class="block w-14 h-1 bg-[#38bdf8] mt-2"></span>
+      </h2>
+      <p>Email: <a href="mailto:yashhavalannache@gmail.com" class="text-pink-400 hover:underline">yashhavalannache@gmail.com</a></p>
+      <p>Phone: <span class="text-pink-400">+91 8951192623</span></p>
+      <p>GitHub: <a href="https://github.com/yashhavalannache" class="text-pink-400 hover:underline">github.com/yashhavalannache</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yashhavalannache" class="text-pink-400 hover:underline">linkedin.com/in/yashhavalannache</a></p>
+    </section>
 
-      <!-- Footer -->
-      <footer class="text-center pt-20 pb-8 text-sm text-[#4f4f4f]">
-        &copy; 2025 Yash Sagar Havalannache • Built with TailwindCSS
-      </footer>
-    </main>
-  </div>
+    <!-- Footer -->
+    <footer class="text-center pt-16 text-sm text-slate-500">
+      &copy; 2025 Yash Sagar Havalannache • Built with TailwindCSS
+    </footer>
+  </main>
 
   <!-- ScrollReveal -->
   <script>
@@ -151,5 +155,6 @@
       reset: false
     });
   </script>
+
 </body>
 </html>
