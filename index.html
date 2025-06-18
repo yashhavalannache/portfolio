@@ -145,16 +145,62 @@
     </footer>
   </main>
 
-  <!-- ScrollReveal -->
   <script>
-    ScrollReveal().reveal('section', {
-      duration: 1000,
-      origin: 'bottom',
-      distance: '40px',
-      delay: 200,
-      reset: false
-    });
-  </script>
+  ScrollReveal().reveal('#hero', {
+    duration: 1000,
+    origin: 'top',
+    distance: '60px',
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('#about', {
+    duration: 1200,
+    origin: 'left',
+    distance: '70px',
+    delay: 100,
+    easing: 'ease-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('#education', {
+    duration: 1200,
+    origin: 'right',
+    distance: '70px',
+    delay: 200,
+    easing: 'ease-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('#experience', {
+    duration: 1200,
+    origin: 'bottom',
+    distance: '60px',
+    delay: 300,
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('#projects', {
+    duration: 1300,
+    scale: 0.9,
+    opacity: 0,
+    delay: 400,
+    easing: 'ease-in-out',
+    reset: false
+  });
+
+  ScrollReveal().reveal('#contact', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '40px',
+    delay: 500,
+    opacity: 0,
+    easing: 'ease-in-out',
+    reset: false
+  });
+</script>
+
 
 </body>
 </html>
