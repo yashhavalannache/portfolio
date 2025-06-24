@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ Must-have for mobile -->
   <title>Resume Writing | Yash Havalannache</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#0f172a] text-white font-sans">
-  <div class="max-w-3xl mx-auto px-6 py-10">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+
+    <!-- Back link -->
     <a href="../index.html#skills" class="text-blue-400 hover:underline text-sm">← Back to Skills & Certifications</a>
 
-    <h1 class="text-3xl sm:text-4xl font-bold mt-6 mb-6">Resume Writing</h1>
+    <!-- Title -->
+    <h1 class="text-3xl sm:text-4xl font-bold mt-6 mb-6 text-center sm:text-left">Resume Writing</h1>
 
+    <!-- Metadata -->
     <p class="text-lg mb-2">🗓️ <span class="text-gray-300">Completed on:</span> <strong>June 20th, 2025</strong></p>
     <p class="text-lg mb-2">🏢 <span class="text-gray-300">Issued by:</span> <strong>HP LIFE</strong></p>
-    <p class="text-lg mb-6">👩‍🏫 <span class="text-gray-300">Signed by:</span> <strong>Stephanie Bormann
- Deputy Director, HP Foundation</strong></p>
+    <p class="text-lg mb-6">👩‍🏫 <span class="text-gray-300">Signed by:</span> 
+      <strong>Stephanie Bormann,<br class="sm:hidden" />
+      Deputy Director, HP Foundation</strong>
+    </p>
 
+    <!-- Skills Section -->
     <h2 class="text-2xl font-semibold text-[#7dd3fc] mb-2">📚 Skills Practiced:</h2>
     <ul class="list-disc list-inside text-gray-300 space-y-1 mb-8">
       <li>Professional Resume Structuring</li>
@@ -23,7 +31,11 @@
       <li>Career Summary Optimization</li>
     </ul>
 
-    <img src="../assets/resume-writing.png" alt="Resume Writing Certificate" class="w-full rounded-lg border shadow-lg hover:scale-105 transition duration-300" />
+    <!-- Certificate Image -->
+    <div class="rounded-lg overflow-hidden">
+      <img src="../assets/resume-writing.png" alt="Resume Writing Certificate" class="w-full h-auto border shadow-lg hover:scale-105 transition duration-300 ease-in-out" />
+    </div>
+
   </div>
 </body>
 </html>
