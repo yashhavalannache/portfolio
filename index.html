@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <style>
+    
     body {
       font-family: 'Inter', sans-serif;
     }
@@ -196,17 +197,66 @@
       </h2>
       <section id="skills" class="..."></section>
    <div class="mb-10">
-    <h3 class="text-xl font-bold mb-4 text-white">Technical Skills</h3>
-    <div class="text-[#e0f2fe] text-base leading-relaxed">
-  Python, Flask, Data Analysis, AI Concepts, Resume Writing, Leadership, Agile, Security
+  <h3 class="text-xl md:text-2xl font-bold mb-6 text-white text-center md:text-left animate-pulse">
+    ⚙️ Technical Skills
+  </h3>
+  
+  <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+    <!-- Skill Pills -->
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Python
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Flask
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Data Analysis
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      AI Concepts
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Resume Writing
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Leadership
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Agile
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Security
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Data Modeling
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Spreadsheets
+    </span>
+    <span class="bg-[#0f172a] text-[#e0f2fe] border border-blue-400 rounded-full px-4 py-2 text-sm hover:bg-blue-600 hover:text-white transition duration-300">
+      Tableau
+    </span>
+  </div>
 </div>
+
 
   <!-- Certificate Cards -->
   <div>
     <div class="mt-10"></div>
     <h3 class="text-xl font-bold mb-4 text-white">Certificates</h3>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    
+    <div id="cert-list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 cursor-move">
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const certList = document.getElementById('cert-list');
+    Sortable.create(certList, {
+      animation: 200,
+      ghostClass: 'opacity-40',
+    });
+  });
+</script>
+
     <!-- Certificate 1 -->
     <div class="relative bg-[#1e293b] rounded-2xl p-5 shadow-lg">
       <div class="flex justify-between items-center mb-2">
@@ -375,7 +425,15 @@
     reset: false
   });
 </script>
-
-
 </body>
 </html>
+<style>
+  .sortable-ghost {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+
+  .sortable-chosen {
+    box-shadow: 0 0 0 3px #3b82f6; /* Blue ring while dragging */
+  }
+</style>
